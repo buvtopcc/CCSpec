@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'buvtopcc' => 'pcc869@gmail.com' }
   s.source           = { :git => 'https://github.com/buvtopcc/jsbridge.git', :tag => s.version }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.jianshu.com/u/3ab98fa3f298'
 
   s.ios.deployment_target = '8.0'
 
@@ -32,13 +32,14 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'jsbridge/Classes/**/*.h'
   # s.resources = ['jsbridge/Assets/*.js']
 
-  s.vendored_frameworks = 'jsbridge/jsbridge.framework'
+  s.vendored_frameworks = 'jsbridge-0.2.0/ios/jsbridge.framework'
+  s.framework = 'WebKit'
 
   # s.resource_bundles = {
   # 'jsbridge' => ['jsbridge/Assets/*.js']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'WebKit'
+  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
