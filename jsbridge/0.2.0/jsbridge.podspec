@@ -35,9 +35,9 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'jsbridge-0.2.0/ios/jsbridge.framework'
   s.framework = 'WebKit'
 
-  # s.resource_bundles = {
-  # 'jsbridge' => ['jsbridge/Assets/*.js']
-  # }
+  s.resource_bundles = {
+      'jsbridge' => ['jsbridge/Assets/*.js']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
