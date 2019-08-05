@@ -28,16 +28,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  # s.source_files = 'jsbridge/Classes/**/*'
-  # s.public_header_files = 'jsbridge/Classes/**/*.h'
-  # s.resources = ['jsbridge/Assets/*.js']
+  s.source_files = 'jsbridge/Classes/**/*'
+  s.public_header_files = 'jsbridge/Classes/**/*.h'
+  s.resources = ['jsbridge/Assets/*.js']
 
-  s.vendored_frameworks = 'jsbridge-0.2.0/ios/jsbridge.framework'
-  s.framework = 'WebKit'
-
-  s.resource_bundles = {
-      'jsbridge' => ['jsbridge/Assets/*.js']
-  }
+  #s.vendored_frameworks = 'jsbridge-0.2.0/ios/jsbridge.framework'
+  s.frameworks = 'WebKit'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
